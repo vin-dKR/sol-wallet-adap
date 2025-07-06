@@ -1,2 +1,39 @@
 @import "tailwindcss";
 
+@theme {
+    --font-ttcb: "TTCommonsBold", "sans-serif";
+    --font-ttcm: "TTCommonsMed", "sans-serif";
+    --font-ttcr: "TTCommonsReg", "sans-serif";
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ttcr)
+}
+
+@font-face {
+    font-family: TTCommonsBold;
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    src: url("/fonts/TT-Commons-Bold.otf");
+}
+
+
+@font-face {
+    font-family: TTCommonsMed;
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    src: url("/fonts/TT-Commons-Medium.otf");
+}
+
+
+@font-face {
+    font-family: TTCommonsReg;
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    src: url("/fonts/TT-Commons-Regular.otf");
+}
