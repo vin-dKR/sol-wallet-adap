@@ -37,3 +37,9 @@ body {
     font-display: swap;
     src: url("/fonts/TT-Commons-Regular.otf");
 }
+
+.wallet-adapter-container {
+    background: #fff !important; /* Or match adapter's default */
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
