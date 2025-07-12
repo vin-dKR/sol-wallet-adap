@@ -25,7 +25,7 @@ export const WalletContextProvider: FC<WalletContextProviderProps> = ({ children
 
     return (
         <ConnectionProvider endpoint={endpoint}>
-            <WalletProvider wallets={wallets} autoConnect>
+            <WalletProvider wallets={wallets} autoConnect key="solana-wallet-provider">
                 <WalletModalProvider>{children}</WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>
